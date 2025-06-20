@@ -55,7 +55,7 @@ portfolio-website/
 
 
 ```markdown
-![Homepage Screenshot](/image1.png)
+![Homepage Screenshot](./image1.png)
 ```
 
 --- 
