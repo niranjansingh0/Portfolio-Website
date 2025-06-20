@@ -16,7 +16,7 @@ Hi! I'm **Niranjan Singh**, a passionate **Full Stack Developer** with a love fo
 - HTML5 & CSS3
 - Tailwind CSS
 
-**Backend (optional):**
+**Backend:**
 - Node.js
 - Express.js
 - MongoDB
@@ -52,7 +52,7 @@ portfolio-website/
 
 ## 📸 Screenshots
 
-> You can add screenshots from the `.screenshots/` folder like this:
+
 
 ```markdown
 ![Homepage Screenshot](.screenshots/image1.png)
@@ -64,9 +64,9 @@ portfolio-website/
 
 You can get in touch through the **Contact** section of the website or connect via:
 
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [GitHub](https://github.com/yourusername)
-- [Email](mailto:your.email@example.com)
+- [LinkedIn](https://www.linkedin.com/in/niranjan-singh-56541126b/)
+- [GitHub](https://github.com/niranjansingh0)
+- [Email](mailto:ns916169@gmail.com)
 
 ---
 
@@ -74,7 +74,7 @@ You can get in touch through the **Contact** section of the website or connect v
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/niranjansingh0/portfolio-website
    ```
 
 2. Navigate to the project folder:
