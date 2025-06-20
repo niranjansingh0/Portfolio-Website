@@ -54,9 +54,9 @@ portfolio-website/
 
 
 
-```markdown
+
 ![Homepage Screenshot](./screenshots/image1.png)
-```
+
 
 --- 
 
