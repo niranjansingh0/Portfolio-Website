@@ -22,7 +22,7 @@ export const projects = [
      github: 'https://github.com/niranjansingh0/Blogs',
      image: '/api/placeholder/400/250',
      featured: true,
-     category: 'Web App'
+     category: 'Full Stack'
    },
 
    {
@@ -75,7 +75,20 @@ export const projects = [
     image: '/api/placeholder/400/250',
     featured: true,
     category: 'Portfolio'
-  }
+  },
+  {
+  id: 7,
+  name: 'E-commerce Website',
+  description: 'Fully responsive e-commerce website built with React.js, designed for showcasing and selling products online with a modern user interface.',
+  longDescription: 'A dynamic and responsive e-commerce web application developed using React.js and Tailwind CSS. The platform enables users to browse products, view detailed descriptions, and add items to the cart. It includes a contact form powered by EmailJS, a clean and intuitive UI, and a mobile-friendly layout. Perfect for small businesses looking to establish an online storefront.',
+  tech: ['React.js', 'Tailwind CSS', 'Node.js', 'EmailJS'],
+  liveDemo: 'https://omcyclestore.vercel.app/',
+  github: 'https://github.com/niranjansingh0/quickserve-website',
+  image: '/api/placeholder/400/250',
+  featured: true,
+  category: 'Web App'
+}
+
 ];
 
 export const projectCategories = [
