@@ -13,8 +13,8 @@ export const certifications = [
   },
   {
     id: 2,
-    title: 'IBM SkillsBuild Summer Internship - Frontend Web Development',
-    organization: 'CSRBOX & IBM SkillsBuild',
+    title: 'IBM SkillsBuild Internship - Frontend Web Development',
+    organization: 'IBM SkillsBuild',
     date: 'Aug 2024',
     description: 'Successfully completed a 6-week internship focused on Frontend Web Development, gaining hands-on experience in modern web technologies, UI development, and collaborative project workflows.',
     link: 'https://drive.google.com/file/d/1LYyZ8FAY-Y7fse00oSF5b-vKk1t8EhNj/view?usp=drive_link', 
@@ -80,7 +80,7 @@ export const certifications = [
   {
     id: 8,
     title: 'Developer Job Simulation',
-    organization: 'Accenture (Forage)',
+    organization: 'Accenture',
     date: 'Oct 2023',
     description: 'Completed practical tasks including defining technical requirements, debugging, unit testing, user acceptance testing, cloud infrastructure scaling, and security assessments as part of a real-world developer job simulation.',
     link: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_jKvpMtM4kaW6ECCFA_1697573138125_completion_certificate.pdf',
