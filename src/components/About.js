@@ -26,7 +26,7 @@ const About = () => {
           <div className="space-y-6">
              <div className="prose prose-lg dark:prose-invert max-w-none">
                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-               Hello! I'm Niranjan Singh, a fresher full-stack developer based in Noida, India, passionate about building modern web applications and smart automation solutions. I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js) and have a strong foundation in <strong>HTML, CSS, JavaScript</strong>, and <strong>Python</strong>, with knowledge of OOP, data structures, and asynchronous programming.
+               Hello! I'm Niranjan Singh, a fresher full-stack developer based in Noida, India, passionate about building modern web applications and smart automation solutions. I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js) and have a strong foundation in <strong>HTML, CSS, JavaScript</strong>, and <strong>CPP</strong>, with knowledge of OOP, data structures, and asynchronous programming.
              </p>
              
              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
