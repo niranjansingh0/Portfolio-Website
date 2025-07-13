@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Instagram } from 'lucide-react';
 import { validateContactForm } from '../utils/helpers';
 
@@ -42,24 +41,41 @@ const Contact = () => {
   setIsSubmitting(true);
   setErrors({});
 
-  try {
-    await emailjs.send(
-      'service_t3kv6xj',           
-      'template_mn6ahsn',          
-      formData,                    
-      '_z2Eto4CDOCpLL4Q4'          
-    );
-
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setSubmitStatus('success');
-    setTimeout(() => setSubmitStatus(null), 5000);
-  } catch (error) {
-    console.error('Email send error:', error);
-    setSubmitStatus('error');
-    setTimeout(() => setSubmitStatus(null), 5000);
-  } finally {
-    setIsSubmitting(false);
-  }
+   try {
+     const form = new FormData();
+     form.append('name', formData.name);
+     form.append('email', formData.email);
+     form.append('subject', formData.subject);
+     form.append('message', formData.message);
+     
+     const response = await fetch('https://script.google.com/macros/s/AKfycbzGrmF_t9gQfgucwaD4kD1i6Oi85ttKXsZmyPDmfRdDELG0h6irt9mPPjFeZLCfms-2jg/exec', {
+       method: 'POST',
+       body: form
+       // Don't set headers! Let the browser set multipart/form-data automatically
+     });
+     
+        
+     const result = await response.json();
+   
+     if (result.success) {
+       setFormData({ name: '', email: '', subject: '', message: '' });
+       setSubmitStatus('success');
+     } else {
+       throw new Error(result.error || "Unknown error occurred");
+     }
+   } catch (error) {
+      console.error('Google Sheet submission error:', error);
+      if (error instanceof Response) {
+        const errText = await error.text();
+        console.error('Full response error:', errText);
+      }
+      setSubmitStatus('error');
+    }
+ finally {
+     setIsSubmitting(false);
+     setTimeout(() => setSubmitStatus(null), 5000);
+   }
+   
 };
 
 
