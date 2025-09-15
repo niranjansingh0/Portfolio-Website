@@ -48,7 +48,7 @@ const Contact = () => {
      form.append('subject', formData.subject);
      form.append('message', formData.message);
      
-     const response = await fetch('https://script.google.com/macros/s/AKfycbzGrmF_t9gQfgucwaD4kD1i6Oi85ttKXsZmyPDmfRdDELG0h6irt9mPPjFeZLCfms-2jg/exec', {
+     const response = await fetch(process.env.REACT_APP_GOOGLE_SCRIPT_URL, {
        method: 'POST',
        body: form
        // Don't set headers! Let the browser set multipart/form-data automatically
