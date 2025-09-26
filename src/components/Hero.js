@@ -129,11 +129,11 @@ const Hero = () => {
           </div>
 
           {/* Glow Effect */}
-          <div
+          {/* <div
             className="absolute inset-[-18px] rounded-full 
                      bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 
                      opacity-40 blur-3xl animate-[pulse_4s_ease-in-out_infinite]"
-          ></div>
+          ></div> */}
         </div>
       </motion.div>
 
