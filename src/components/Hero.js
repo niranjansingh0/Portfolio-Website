@@ -114,58 +114,53 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="flex-1 flex justify-center items-center mt-10 md:mt-0"
       >
-      <div className="relative group w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
-        {/* Gradient Border Wrapper */}
-        <div className="p-[4px] rounded-full bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400">
-          <img
-            src="/NiranjanPhoto.jpg"
-            alt="Niranjan Singh"
-            className="w-full h-full object-cover rounded-full 
+        <div className="relative group w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          {/* Gradient Border Wrapper */}
+          <div className="p-[4px] rounded-full bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400">
+            <img
+              src="/NiranjanPhoto.jpg"
+              alt="Niranjan Singh"
+              className="w-full h-full object-cover rounded-full 
                        shadow-2xl 
                        animate-[float_4s_ease-in-out_infinite]
                        transition-transform duration-500 
                        group-hover:scale-105 group-hover:rotate-2"
-          />
-        </div>
-      
-        {/* Glow Effect */}
-        <div
-          className="absolute inset-[-18px] rounded-full 
+            />
+          </div>
+
+          {/* Glow Effect */}
+          <div
+            className="absolute inset-[-18px] rounded-full 
                      bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 
                      opacity-40 blur-3xl animate-[pulse_4s_ease-in-out_infinite]"
-        ></div>
-      </div>
-        
-
-      
+          ></div>
+        </div>
       </motion.div>
 
-     {/* Scroll Down Button */}
-     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-       <button
-         onClick={() => scrollToSection("about")} // Change "about" to your actual next section id
-         className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md 
-                    hover:bg-gray-300 dark:hover:bg-gray-700 transition"
-       >
-         <svg
-           xmlns="http://www.w3.org/2000/svg"
-           width="28"
-           height="28"
-           viewBox="0 0 24 24"
-           fill="none"
-           stroke="currentColor"
-           strokeWidth="2"
-           strokeLinecap="round"
-           strokeLinejoin="round"
-           className="h-6 w-6 text-gray-600 dark:text-gray-400 animate-bounce"
-         >
-           <path d="m6 9 6 6 6-6"></path>
-         </svg>
-       </button>
-     </div>
-     
+      {/* Scroll Down Button */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+        <button
+          onClick={() => scrollToSection("about")}
+          className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md 
+               hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-5 w-5 text-gray-600 dark:text-gray-400 animate-bounce"
+          >
+            <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
+      </div>
     </section>
-
   );
 };
 
